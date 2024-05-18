@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a05a04c191.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Index</title>
+  </head>
+  <body>
+    <section>
+      <!----Header----->
+      <div class="header-img">
+        <div class="container-img">
+          <!----Navbar--->
+          <header class="header">
+            <div class="logo">
+              <a href="index.html">
+                <img src="src/imagens/logo.png" alt="logo" />
+              </a>
+            </div>
+            <div class="searchbar-container">
+              <form action="#">
+                <input type="text" placeholder="..." name="search" />
+                <span class="search"><i class="fa fa-search"></i></span>
+              </form>
+            </div>
+            <nav>
+              <ul class="navbar">
+                <li>
+                  <a href="conocenos.html">Conócenos</a>
+                </li>
+                <li>
+                  <a href="contactanos.html">Contáctanos</a>
+                </li>
+                <li>
+                  <a href="catalogo.html">Catalogo</a>
+                </li>
+                <li>
+                  <a href="#icon1"><i class="fa-solid fa-user"></i></a>
+                </li>
+                <li>
+                  <a href="#Icon2">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#Icon3"><i class="fa-solid fa-circle-info"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+        </div>
+      </div>
+    </section>
+
+    <section class="breadcrum">
+      <a href="index.html">Home</a>
+      <span><i class="fa-solid fa-angle-right"></i></span>
+      <a href="catalogo.html" class="active">Catalogo</a>
+      <span><i class="fa-solid fa-angle-right"></i></span>
+      <a href="#" class="active">Hotcakes de Fambruesa</a>
+    </section>
+
+    <section class="producto">
+      <div class="slide-producto">
+        <img src="src/imagens/Component 1.png" alt="slide-dummy" />
+      </div>
+
+      <div class="box-producto">
+        <div class="box-nombre">
+          <h2 class="nombre-producto">Pastel de chocolate con fresas</h2>
+          <span><i class="fa-regular fa-heart"></i></span>
+        </div>
+
+        <div class="box-precio">
+          <div class="precio-carrito">
+            <p class="precio">$230 <span>MXN</span></p>
+            <button class="btn-carrito">
+              <p>Agregar al carrito</p>
+              <span><i class="fa-solid fa-cart-plus"></i></span>
+            </button>
+          </div>
+
+          <div class="cantidad-compra">
+            <div class="box-cantidad">
+              <span class="incrementar" onclick="incrementar()">+</span>
+              <span class="disminuir" onclick="disminuir()">-</span>
+              <div id="box">
+                <span>0</span>
+              </div>
+            </div>
+
+            <button class="btn-comprar">Compra ya!</button>
+          </div>
+        </div>
+
+        <div class="descripcion">
+          <h2 class="titulo-d">Descripción del producto</h2>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Natus ipsam molestias impedit. Esse lorem ipsum dolor sit <br />
+            amet consectetur adipisicing elit.Natus ipsam molestias impedit.
+          </p>
+        </div>
+
+        <div class="detalles">
+          <h2 class="titulo-d">Detalles del producto</h2>
+          <hr />
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="comentarios">
+      <h2>Comentarios</h2>
+
+      <div class="box-agregar-comentario">
+        <div class="calificar">
+          <p>Calificación</p>
+          <div>
+            <img
+              src="src/imagens/grupo de estrellas.png"
+              alt="estrellas-dummy"
+            />
+          </div>
+        </div>
+        <textarea placeholder="Opinion..." cols="30" rows="10"></textarea>
+        <button>Enviar</button>
+      </div>
+
+      <div class="reviews">
+        <div class="grafica">
+          <p>Opinion de los clientes</p>
+          <div class="box-img">
+            <img src="src/imagens/Group 73.png" alt="grafico-dummy" />
+          </div>
+        </div>
+
+        <div class="recientes">
+
+          <div class="box-opinion">
+            <span><i class="fa-regular fa-circle-user"></i></span>
+            <div class="opinion-usuario">
+              <p class="nombre-usuario">Aqui va un nombre</p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
+                facere, laboriosam nostrum consectetur, et doloribus illo, quam
+                tempora ipsam omnis aspernatur cumque. Eveniet, esse?
+                Accusantium optio consequatur corporis magni numquam?
+              </p>
+            </div>
+            <div class="botones">
+              <button class="btn-me-gusta">
+                <p>Me gusta</p>
+                <span><i class="fa-regular fa-thumbs-up"></i></span>
+              </button>
+              <button>reportar</button>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="logo-footer">
+        <img src="src/imagens/dely's.png" alt="logo2" />
+        <p>hello@example.com</p>
+        <p>+52 (443) 552-6856</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="group-links">
+          <h4>Plataforma</h4>
+          <a href="conocenos.html">Conócenos</a>
+          <a href="contactanos.html">Contáctanos</a>
+          <a href="catalogo.html">Catalogo</a>
+        </div>
+
+        <div class="group-links">
+          <h4>Soporte</h4>
+          <a href="#">Centro de ayuda</a>
+        </div>
+
+        <div class="group-links">
+          <h4>Legal</h4>
+          <a href="#">Politica de privacidad</a>
+        </div>
+      </div>
+
+      <hr class="line" />
+
+      <div class="media-links">
+        <a href="#Conocenos"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#Contactanos"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#Catalogo"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a05a04c191.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contactanos</title>
+  </head>
+  <body>
+    <section>
+      <!----Header----->
+      <div class="header-img">
+        <div class="container-img">
+          <!----Navbar--->
+          <header class="header">
+            <div class="logo">
+              <a href="index.html">
+                <img src="src/imagens/logo.png" alt="logo" />
+              </a>
+            </div>
+            <div class="searchbar-container">
+              <form action="#">
+                <input type="text" placeholder="..." name="search" />
+                <span class="search"><i class="fa fa-search"></i></span>
+              </form>
+            </div>
+            <nav>
+              <ul class="navbar">
+                <div class="btn-close">
+                  <i class="fa-solid fa-x close"></i>
+                </div>
+                <li>
+                  <a href="conocenos.html">Conócenos</a>
+                </li>
+                <li>
+                  <a href="contactanos.html">Contáctanos</a>
+                </li>
+                <li>
+                  <a href="catalogo.html">Catalogo</a>
+                </li>
+                <li>
+                  <a href="#icon1" class="icon">
+                    <span>Iniciar sesión</span> <i class="fa-solid fa-user"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#Icon2" class="icon">
+                    <span>Tu carrito</span
+                    ><i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#Icon3" class="icon"
+                    ><span>Ayuda</span><i class="fa-solid fa-circle-info"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+            <div class="hamburger">
+              <i class="fa-solid fa-bars menu"></i>
+            </div>
+          </header>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-map">
+      <div id="map"></div>
+    </section>
+
+    <section class="sucursal">
+      <div class="box-sucursal">
+        <h3 class="titulo-sucursal">Sucursal 1</h3>
+        <div class="box-info" id="direccion">
+          <span><i class="fa-solid fa-location-dot"></i></span>
+          <p>Av. México 3300, Vallarta Norte, 44690 Guadalajara, Jalisco</p>
+        </div>
+        <div class="box-info" id="telefono">
+          <span><i class="fa-solid fa-phone"></i></span>
+          <p>338-586-1546</p>
+        </div>
+        <div class="box-info" id="horario">
+          <span><i class="fa-regular fa-calendar"></i></span>
+          <p>8:00 a.m. - 5:00 p.m.</p>
+        </div>
+      </div>
+
+      <div class="box-sucursal">
+        <h3 class="titulo-sucursal">Sucursal 2</h3>
+        <div class="box-info" id="direccion">
+          <span><i class="fa-solid fa-location-dot"></i></span>
+          <p>Av. Guadalupe 4266, Ciudad de los Niños, 45030 Zapopan, Jalisco</p>
+        </div>
+        <div class="box-info" id="telefono">
+          <span><i class="fa-solid fa-phone"></i></span>
+          <p>338-586-1546</p>
+        </div>
+        <div class="box-info" id="horario">
+          <span><i class="fa-regular fa-calendar"></i></span>
+          <p>8:00 a.m. - 5:00 p.m.</p>
+        </div>
+      </div>
+
+      <div class="box-sucursal">
+        <h3 class="titulo-sucursal">Sucursal 3</h3>
+        <div class="box-info" id="direccion">
+          <span><i class="fa-solid fa-location-dot"></i></span>
+          <p>Av. Chapultepec Sur 284, Americana, 44160 Guadalajara, Jalisco</p>
+        </div>
+        <div class="box-info" id="telefono">
+          <span><i class="fa-solid fa-phone"></i></span>
+          <p>338-586-1546</p>
+        </div>
+        <div class="box-info" id="horario">
+          <span><i class="fa-regular fa-calendar"></i></span>
+          <p>8:00 a.m. - 5:00 p.m.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="formulario-contacto">
+      <div class="box-formulario">
+        <form action="#">
+          <div class="form-body">
+            <div class="input-group">
+              <div class="input">
+                <label for="nombre">Nombre</label>
+                <input type="text" />
+              </div>
+              <div class="input">
+                <label for="">Correo Electronico</label>
+                <input type="text" />
+              </div>
+            </div>
+
+            <div class="input">
+              <label for="">Asunto</label>
+              <input type="text" name="" id="" />
+            </div>
+
+            <div class="input">
+              <label for="">Mensaje</label>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="form-enviar">
+            <div class="logo-form">
+              <img src="src/imagens/Group 72.png" alt="icono-contactanos" />
+            </div>
+
+            <div class="contactanos">
+              <h3>Contactanos</h3>
+              <p>
+                Estaremos siempre disponibles para ti! <br />
+                Si tienes algun tipo de duda por favor contactanos!
+              </p>
+            </div>
+
+            <button class="btn-contactanos">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="logo-footer">
+        <img src="src/imagens/dely's.png" alt="logo2" />
+        <p>hello@example.com</p>
+        <p>+52 (443) 552-6856</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="group-links">
+          <h4>Plataforma</h4>
+          <a href="conocenos.html">Conocenos</a>
+          <a href="contactanos.html">Contactanos</a>
+          <a href="catalogo.html">Catalogo</a>
+        </div>
+
+        <div class="group-links">
+          <h4>Soporte</h4>
+          <a href="#">Centro de ayuda</a>
+        </div>
+
+        <div class="group-links">
+          <h4>Legal</h4>
+          <a href="#">Politica de privacidad</a>
+        </div>
+      </div>
+
+      <hr class="line" />
+
+      <div class="media-links">
+        <a href="#Conocenos"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#Contactanos"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#Catalogo"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </footer>
+    
+    <script src="mapa.js"></script>
+  </body>
+</html>
