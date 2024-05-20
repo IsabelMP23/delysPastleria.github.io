@@ -305,7 +305,7 @@ header .logo a {
   grid-area: l;
   display: flex;
   flex-direction: column;
-  width: 200px;
+  max-width: 200px;
   justify-content: center;
   align-content: center;
   text-align: center;
@@ -313,7 +313,6 @@ header .logo a {
 }
 
 .logo-footer img {
-  width: 100%;
   height: auto;
   max-width: 200px;
 }
@@ -1264,7 +1263,6 @@ textarea {
     row-gap: 60px;
   }
 
-
   /*team*/
 
   .team {
@@ -1297,8 +1295,6 @@ textarea {
   .box-formulario {
     width: 100%;
   }
-
-
 
   /*----------------------------------Pagina Catalogo-----------------------*/
   /*Breadcrum*/
@@ -1362,6 +1358,191 @@ textarea {
     margin-left: 0.8rem;
   }
 
+  /*team*/
+
+  .team {
+    grid-template-areas:
+      "tt"
+      "ct1"
+      "ct2";
+    margin: 5rem 2rem;
+    row-gap: 40px;
+  }
+
+  .container-team1,
+  .container-team2 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "tag"
+      "img";
+    justify-items: center;
+  }
+
+  .team-img {
+    grid-area: img;
+    max-width: 370px;
+  }
+
+  .team-tag {
+    grid-area: tag;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .team-icono {
+    justify-content: center;
+  }
+
+  /*----------------------------------Pagina Contactanos-----------------------*/
+
+  #map {
+    height: 400px;
+  }
+
+  /*Section Sucursal*/
+  .sucursal {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  /*Section formulario-Contacto*/
+  .formulario-contacto {
+    padding: 2rem;
+  }
+
+  .box-formulario {
+    width: 100%;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .form-enviar {
+    display: none;
+  }
+
+  /*----------------------------------Pagina Catalogo-----------------------*/
+  /*Breadcrum*/
+
+  .main {
+    display: grid;
+    margin: 0px;
+    grid-template-areas:
+      "cat"
+      "pro"
+      "pro";
+    grid-template-columns: 1fr;
+  }
+
+  .adver-catalogo {
+    display: none;
+  }
+
+  .items-catalogo {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  /*filtrp*/
+
+  .filtre {
+    display: none;
+  }
+
+  /*items*/
+  .card-items {
+    max-width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .card-items img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .card-text {
+    width: 40%;
+  }
+
+  .card-text button {
+    display: block;
+  }
+}
+
+@media (max-width: 570px) {
+  .navbar.active {
+    right: -20px;
+  }
+
+  .hero {
+    background-position: 30% 75%;
+  }
+
+  .hero-text {
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -60%);
+    align-items: left;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+    /*footer*/
+
+    .footer {
+      grid-template-areas:
+        "l  l  l"
+        "b  b  b"
+        "a  a  a"
+        ".  .  m";
+      justify-items: center;
+    }
+    
+    .logo-footer {
+      flex-direction: row;
+      max-width: 100%;
+      text-align: left;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+
+    .logo-footer img {
+      height: auto;
+      max-width: 50%;
+    }
+  
+    .footer-links {
+      margin: 10px 5px;
+      font-size: 0.9rem;
+      gap: 10px;
+    }
+
+    .group-links {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .group-links a {
+      font-size: 0.8rem;
+    }
+
+
+  /*Nuestra historia*/
+  .text-dot {
+    margin-left: 0.8rem;
+  }
 
   /*team*/
 
